@@ -6,4 +6,9 @@ describe 'Order' do
     order = Order.new
     expect(order.menu).to include("Tiramisu" => 11.40)
   end
+
+  it 'shows an empty order' do
+    order = Order.new
+    expect(order.current_order).to eq([])
+  end
 end

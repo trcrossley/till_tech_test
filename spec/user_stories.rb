@@ -6,4 +6,9 @@
 # User Story 2
 # As a customer
 # So I can place an order
-# I want to receive a list of my items and total cost
+# I want to receive a list of my items
+
+# User Story 3
+# As a customer
+# So I can pay for my order
+# I want to see the total cost
