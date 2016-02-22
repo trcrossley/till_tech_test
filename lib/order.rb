@@ -8,11 +8,21 @@ class Order
     @current_order = []
   end
 
-  def menu
+  def menu_list
     file = File.read('hipstercoffee.json')
     details = JSON.parse(file)
-    details[0]['prices'][0]
+    return details[0]['prices'][0]
   end
+
+  def add_item(item, amount)
+    @current_order << [item, amount]
+  end
+
+  def item_price(name)
+    return menu_list[name]
+  end
+
+  private
 
 
 end
