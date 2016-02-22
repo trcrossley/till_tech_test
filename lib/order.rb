@@ -18,11 +18,10 @@ class Order
     @current_order << [item, amount, item_price(item)]
   end
 
+  private
+
   def item_price(name)
     return menu_list[name]
   end
-
-  private
-
 
 end

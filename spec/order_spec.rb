@@ -14,11 +14,13 @@ describe 'Order' do
 
   describe 'Placing an order' do
 
-    it 'adds an item to the order' do
+    it 'adds an item with amount to the order' do
       order = Order.new
       order.add_item("Tiramisu", 1)
       expect(order.current_order).to eq([["Tiramisu", 1, 11.4]])
     end
+
+
 
   end
 end
