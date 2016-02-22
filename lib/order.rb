@@ -15,7 +15,7 @@ class Order
   end
 
   def add_item(item, amount)
-    @current_order << [item, amount]
+    @current_order << [item, amount, item_price(item)]
   end
 
   def item_price(name)
